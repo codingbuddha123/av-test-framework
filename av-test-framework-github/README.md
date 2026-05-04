@@ -144,8 +144,7 @@ MIT
 
 ## 📧 Contact
 
-**Rishu Mishra**  
-mishrarishu17@gmail.com  
+**Rishu Mishra**    
 [LinkedIn](https://linkedin.com/in/rishu-mishra-9a31b265)
 
 ---
