@@ -1,0 +1,1622 @@
+{
+  "run_at": "2026-04-17T20:45:03.966942",
+  "total": 20,
+  "passed": 20,
+  "failed": 0,
+  "pass_rate": "100.0%",
+  "total_violations": 0,
+  "results": [
+    {
+      "scenario_id": "0e57860f",
+      "name": "sensor_critical_rain_204456",
+      "category": "sensor",
+      "severity": "critical",
+      "compliance_tags": [
+        "MISRA_C_2012_Rule_14_2",
+        "CERT_FLP32_C",
+        "ISO26262_ASIL_B"
+      ],
+      "scenario": {
+        "id": "0e57860f",
+        "name": "sensor_critical_rain_204456",
+        "category": "sensor",
+        "severity": "critical",
+        "compliance_tags": [
+          "MISRA_C_2012_Rule_14_2",
+          "CERT_FLP32_C",
+          "ISO26262_ASIL_B"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 29.19,
+          "acceleration_mps2": -6.79,
+          "heading_deg": 61.3,
+          "lane_position": "right"
+        },
+        "environment": {
+          "weather": "rain",
+          "visibility_m": 61.9,
+          "road_condition": "icy",
+          "lighting": "dusk"
+        },
+        "traffic_signals": {
+          "state": "NONE",
+          "distance_m": 57.5,
+          "time_to_change_s": 5.9
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "vehicle",
+            "distance_m": 69.0,
+            "relative_speed_mps": 13.06,
+            "lane_overlap": true,
+            "trajectory": "approaching"
+          },
+          {
+            "id": "obj_2",
+            "type": "obstacle",
+            "distance_m": 37.16,
+            "relative_speed_mps": -0.69,
+            "lane_overlap": false,
+            "trajectory": "following"
+          },
+          {
+            "id": "obj_3",
+            "type": "obstacle",
+            "distance_m": 27.67,
+            "relative_speed_mps": -2.39,
+            "lane_overlap": true,
+            "trajectory": "approaching"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "none",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "CONTINUE",
+          "max_response_time_ms": 1000,
+          "min_deceleration_mps2": 0,
+          "alert_level": "none"
+        }
+      },
+      "decision": {
+        "action": "CONTINUE",
+        "alert_level": "none",
+        "deceleration_mps2": 0.0,
+        "response_time_ms": 89,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.771
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "d2419ebd",
+      "name": "sensor_high_clear_204456",
+      "category": "sensor",
+      "severity": "high",
+      "compliance_tags": [
+        "MISRA_C_2012_Rule_14_2",
+        "CERT_FLP32_C",
+        "ISO26262_ASIL_B"
+      ],
+      "scenario": {
+        "id": "d2419ebd",
+        "name": "sensor_high_clear_204456",
+        "category": "sensor",
+        "severity": "high",
+        "compliance_tags": [
+          "MISRA_C_2012_Rule_14_2",
+          "CERT_FLP32_C",
+          "ISO26262_ASIL_B"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 15.36,
+          "acceleration_mps2": -1.83,
+          "heading_deg": 24.7,
+          "lane_position": "right"
+        },
+        "environment": {
+          "weather": "clear",
+          "visibility_m": 182.7,
+          "road_condition": "dry",
+          "lighting": "dusk"
+        },
+        "traffic_signals": {
+          "state": "NONE",
+          "distance_m": 51.3,
+          "time_to_change_s": 1.9
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "vehicle",
+            "distance_m": 56.93,
+            "relative_speed_mps": -7.41,
+            "lane_overlap": true,
+            "trajectory": "stationary"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "none",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "CONTINUE",
+          "max_response_time_ms": 1000,
+          "min_deceleration_mps2": 0,
+          "alert_level": "none"
+        }
+      },
+      "decision": {
+        "action": "CONTINUE",
+        "alert_level": "none",
+        "deceleration_mps2": 0.0,
+        "response_time_ms": 58,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.769
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "56347f1d",
+      "name": "security_critical_snow_204456",
+      "category": "security",
+      "severity": "critical",
+      "compliance_tags": [
+        "CERT_INT30_C",
+        "CERT_STR31_C",
+        "MISRA_C_2012_Rule_21_3",
+        "SAE_J3061"
+      ],
+      "scenario": {
+        "id": "56347f1d",
+        "name": "security_critical_snow_204456",
+        "category": "security",
+        "severity": "critical",
+        "compliance_tags": [
+          "CERT_INT30_C",
+          "CERT_STR31_C",
+          "MISRA_C_2012_Rule_21_3",
+          "SAE_J3061"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 23.25,
+          "acceleration_mps2": -5.08,
+          "heading_deg": 223.5,
+          "lane_position": "right"
+        },
+        "environment": {
+          "weather": "snow",
+          "visibility_m": 16.0,
+          "road_condition": "icy",
+          "lighting": "day"
+        },
+        "traffic_signals": {
+          "state": "YELLOW",
+          "distance_m": 99.1,
+          "time_to_change_s": 3.8
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "vehicle",
+            "distance_m": 30.2,
+            "relative_speed_mps": -14.41,
+            "lane_overlap": false,
+            "trajectory": "approaching"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "gps",
+          "signal_jamming": false,
+          "replay_attack": true,
+          "data_injection": true
+        },
+        "expected_behavior": {
+          "action": "STOP",
+          "max_response_time_ms": 150,
+          "min_deceleration_mps2": 8.0,
+          "alert_level": "critical"
+        }
+      },
+      "decision": {
+        "action": "BRAKE",
+        "alert_level": "warning",
+        "deceleration_mps2": 4.0,
+        "response_time_ms": 113,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.987
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "5c0955dd",
+      "name": "security_critical_fog_204456",
+      "category": "security",
+      "severity": "critical",
+      "compliance_tags": [
+        "CERT_INT30_C",
+        "CERT_STR31_C",
+        "MISRA_C_2012_Rule_21_3",
+        "SAE_J3061"
+      ],
+      "scenario": {
+        "id": "5c0955dd",
+        "name": "security_critical_fog_204456",
+        "category": "security",
+        "severity": "critical",
+        "compliance_tags": [
+          "CERT_INT30_C",
+          "CERT_STR31_C",
+          "MISRA_C_2012_Rule_21_3",
+          "SAE_J3061"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 24.86,
+          "acceleration_mps2": -7.32,
+          "heading_deg": 41.2,
+          "lane_position": "right"
+        },
+        "environment": {
+          "weather": "fog",
+          "visibility_m": 27.8,
+          "road_condition": "dry",
+          "lighting": "dusk"
+        },
+        "traffic_signals": {
+          "state": "NONE",
+          "distance_m": 106.2,
+          "time_to_change_s": 10.5
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "vehicle",
+            "distance_m": 12.9,
+            "relative_speed_mps": -2.89,
+            "lane_overlap": true,
+            "trajectory": "stationary"
+          },
+          {
+            "id": "obj_2",
+            "type": "vehicle",
+            "distance_m": 10.7,
+            "relative_speed_mps": 14.31,
+            "lane_overlap": false,
+            "trajectory": "approaching"
+          },
+          {
+            "id": "obj_3",
+            "type": "vehicle",
+            "distance_m": 20.88,
+            "relative_speed_mps": 7.26,
+            "lane_overlap": true,
+            "trajectory": "approaching"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "none",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "BRAKE",
+          "max_response_time_ms": 400,
+          "min_deceleration_mps2": 2.5,
+          "alert_level": "warning"
+        }
+      },
+      "decision": {
+        "action": "BRAKE",
+        "alert_level": "warning",
+        "deceleration_mps2": 2.5,
+        "response_time_ms": 54,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.976
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "762eddda",
+      "name": "lane_medium_fog_204456",
+      "category": "lane",
+      "severity": "medium",
+      "compliance_tags": [
+        "MISRA_C_2012_Rule_13_5",
+        "CERT_EXP36_C",
+        "ISO26262_ASIL_C"
+      ],
+      "scenario": {
+        "id": "762eddda",
+        "name": "lane_medium_fog_204456",
+        "category": "lane",
+        "severity": "medium",
+        "compliance_tags": [
+          "MISRA_C_2012_Rule_13_5",
+          "CERT_EXP36_C",
+          "ISO26262_ASIL_C"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 2.38,
+          "acceleration_mps2": -2.13,
+          "heading_deg": 109.9,
+          "lane_position": "center"
+        },
+        "environment": {
+          "weather": "fog",
+          "visibility_m": 12.9,
+          "road_condition": "dry",
+          "lighting": "dusk"
+        },
+        "traffic_signals": {
+          "state": "RED",
+          "distance_m": 20.0,
+          "time_to_change_s": 13.2
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "vehicle",
+            "distance_m": 35.19,
+            "relative_speed_mps": 11.73,
+            "lane_overlap": true,
+            "trajectory": "approaching"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "none",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "CONTINUE",
+          "max_response_time_ms": 1000,
+          "min_deceleration_mps2": 0,
+          "alert_level": "none"
+        }
+      },
+      "decision": {
+        "action": "CONTINUE",
+        "alert_level": "none",
+        "deceleration_mps2": 0.0,
+        "response_time_ms": 58,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.887
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "8e38fa8f",
+      "name": "braking_critical_night_204456",
+      "category": "braking",
+      "severity": "critical",
+      "compliance_tags": [
+        "MISRA_C_2012_Rule_15_3",
+        "ISO26262_ASIL_D",
+        "CERT_INT32_C"
+      ],
+      "scenario": {
+        "id": "8e38fa8f",
+        "name": "braking_critical_night_204456",
+        "category": "braking",
+        "severity": "critical",
+        "compliance_tags": [
+          "MISRA_C_2012_Rule_15_3",
+          "ISO26262_ASIL_D",
+          "CERT_INT32_C"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 29.93,
+          "acceleration_mps2": -5.06,
+          "heading_deg": 322.7,
+          "lane_position": "center"
+        },
+        "environment": {
+          "weather": "night",
+          "visibility_m": 53.1,
+          "road_condition": "dry",
+          "lighting": "night"
+        },
+        "traffic_signals": {
+          "state": "YELLOW",
+          "distance_m": 32.1,
+          "time_to_change_s": 1.5
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "obstacle",
+            "distance_m": 7.37,
+            "relative_speed_mps": 8.96,
+            "lane_overlap": true,
+            "trajectory": "crossing"
+          },
+          {
+            "id": "obj_2",
+            "type": "obstacle",
+            "distance_m": 7.81,
+            "relative_speed_mps": -10.74,
+            "lane_overlap": true,
+            "trajectory": "approaching"
+          },
+          {
+            "id": "obj_3",
+            "type": "obstacle",
+            "distance_m": 62.79,
+            "relative_speed_mps": 2.24,
+            "lane_overlap": false,
+            "trajectory": "approaching"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "none",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "STOP",
+          "max_response_time_ms": 150,
+          "min_deceleration_mps2": 8.0,
+          "alert_level": "critical"
+        }
+      },
+      "decision": {
+        "action": "STOP",
+        "alert_level": "critical",
+        "deceleration_mps2": 8.0,
+        "response_time_ms": 76,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.859
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "d829ce27",
+      "name": "lane_critical_fog_204456",
+      "category": "lane",
+      "severity": "critical",
+      "compliance_tags": [
+        "MISRA_C_2012_Rule_13_5",
+        "CERT_EXP36_C",
+        "ISO26262_ASIL_C"
+      ],
+      "scenario": {
+        "id": "d829ce27",
+        "name": "lane_critical_fog_204456",
+        "category": "lane",
+        "severity": "critical",
+        "compliance_tags": [
+          "MISRA_C_2012_Rule_13_5",
+          "CERT_EXP36_C",
+          "ISO26262_ASIL_C"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 18.17,
+          "acceleration_mps2": -5.6,
+          "heading_deg": 72.7,
+          "lane_position": "center"
+        },
+        "environment": {
+          "weather": "fog",
+          "visibility_m": 13.3,
+          "road_condition": "dry",
+          "lighting": "day"
+        },
+        "traffic_signals": {
+          "state": "GREEN",
+          "distance_m": 53.9,
+          "time_to_change_s": 9.4
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "obstacle",
+            "distance_m": 77.79,
+            "relative_speed_mps": -4.79,
+            "lane_overlap": true,
+            "trajectory": "stationary"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "none",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "BRAKE",
+          "max_response_time_ms": 300,
+          "min_deceleration_mps2": 4.0,
+          "alert_level": "warning"
+        }
+      },
+      "decision": {
+        "action": "BRAKE",
+        "alert_level": "warning",
+        "deceleration_mps2": 3.0,
+        "response_time_ms": 114,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.936
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "b192fd97",
+      "name": "lane_high_fog_204456",
+      "category": "lane",
+      "severity": "high",
+      "compliance_tags": [
+        "MISRA_C_2012_Rule_13_5",
+        "CERT_EXP36_C",
+        "ISO26262_ASIL_C"
+      ],
+      "scenario": {
+        "id": "b192fd97",
+        "name": "lane_high_fog_204456",
+        "category": "lane",
+        "severity": "high",
+        "compliance_tags": [
+          "MISRA_C_2012_Rule_13_5",
+          "CERT_EXP36_C",
+          "ISO26262_ASIL_C"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 19.83,
+          "acceleration_mps2": -4.79,
+          "heading_deg": 178.9,
+          "lane_position": "left"
+        },
+        "environment": {
+          "weather": "fog",
+          "visibility_m": 10.1,
+          "road_condition": "dry",
+          "lighting": "dusk"
+        },
+        "traffic_signals": {
+          "state": "GREEN",
+          "distance_m": 59.7,
+          "time_to_change_s": 16.2
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "vehicle",
+            "distance_m": 53.33,
+            "relative_speed_mps": -0.3,
+            "lane_overlap": false,
+            "trajectory": "approaching"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "none",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "BRAKE",
+          "max_response_time_ms": 300,
+          "min_deceleration_mps2": 4.0,
+          "alert_level": "warning"
+        }
+      },
+      "decision": {
+        "action": "BRAKE",
+        "alert_level": "warning",
+        "deceleration_mps2": 3.0,
+        "response_time_ms": 57,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.874
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "28dd1029",
+      "name": "security_critical_clear_204456",
+      "category": "security",
+      "severity": "critical",
+      "compliance_tags": [
+        "CERT_INT30_C",
+        "CERT_STR31_C",
+        "MISRA_C_2012_Rule_21_3",
+        "SAE_J3061"
+      ],
+      "scenario": {
+        "id": "28dd1029",
+        "name": "security_critical_clear_204456",
+        "category": "security",
+        "severity": "critical",
+        "compliance_tags": [
+          "CERT_INT30_C",
+          "CERT_STR31_C",
+          "MISRA_C_2012_Rule_21_3",
+          "SAE_J3061"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 21.22,
+          "acceleration_mps2": -3.53,
+          "heading_deg": 171.7,
+          "lane_position": "right"
+        },
+        "environment": {
+          "weather": "clear",
+          "visibility_m": 127.3,
+          "road_condition": "dry",
+          "lighting": "day"
+        },
+        "traffic_signals": {
+          "state": "GREEN",
+          "distance_m": 78.7,
+          "time_to_change_s": 15.5
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "vehicle",
+            "distance_m": 44.74,
+            "relative_speed_mps": 12.89,
+            "lane_overlap": false,
+            "trajectory": "crossing"
+          },
+          {
+            "id": "obj_2",
+            "type": "vehicle",
+            "distance_m": 27.8,
+            "relative_speed_mps": 13.74,
+            "lane_overlap": true,
+            "trajectory": "crossing"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "lidar",
+          "signal_jamming": true,
+          "replay_attack": false,
+          "data_injection": true
+        },
+        "expected_behavior": {
+          "action": "STOP",
+          "max_response_time_ms": 150,
+          "min_deceleration_mps2": 8.0,
+          "alert_level": "critical"
+        }
+      },
+      "decision": {
+        "action": "STOP",
+        "alert_level": "critical",
+        "deceleration_mps2": 8.0,
+        "response_time_ms": 74,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.804
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "37fb086e",
+      "name": "security_critical_fog_204456",
+      "category": "security",
+      "severity": "critical",
+      "compliance_tags": [
+        "CERT_INT30_C",
+        "CERT_STR31_C",
+        "MISRA_C_2012_Rule_21_3",
+        "SAE_J3061"
+      ],
+      "scenario": {
+        "id": "37fb086e",
+        "name": "security_critical_fog_204456",
+        "category": "security",
+        "severity": "critical",
+        "compliance_tags": [
+          "CERT_INT30_C",
+          "CERT_STR31_C",
+          "MISRA_C_2012_Rule_21_3",
+          "SAE_J3061"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 18.99,
+          "acceleration_mps2": -7.78,
+          "heading_deg": 200.4,
+          "lane_position": "left"
+        },
+        "environment": {
+          "weather": "fog",
+          "visibility_m": 22.6,
+          "road_condition": "dry",
+          "lighting": "dusk"
+        },
+        "traffic_signals": {
+          "state": "GREEN",
+          "distance_m": 68.8,
+          "time_to_change_s": 15.2
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "vehicle",
+            "distance_m": 49.62,
+            "relative_speed_mps": 8.86,
+            "lane_overlap": true,
+            "trajectory": "crossing"
+          },
+          {
+            "id": "obj_2",
+            "type": "vehicle",
+            "distance_m": 44.25,
+            "relative_speed_mps": 1.15,
+            "lane_overlap": true,
+            "trajectory": "approaching"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "gps",
+          "signal_jamming": true,
+          "replay_attack": false,
+          "data_injection": true
+        },
+        "expected_behavior": {
+          "action": "STOP",
+          "max_response_time_ms": 150,
+          "min_deceleration_mps2": 8.0,
+          "alert_level": "critical"
+        }
+      },
+      "decision": {
+        "action": "STOP",
+        "alert_level": "critical",
+        "deceleration_mps2": 8.0,
+        "response_time_ms": 68,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.867
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "1bbf813c",
+      "name": "sensor_high_clear_204456",
+      "category": "sensor",
+      "severity": "high",
+      "compliance_tags": [
+        "MISRA_C_2012_Rule_14_2",
+        "CERT_FLP32_C",
+        "ISO26262_ASIL_B"
+      ],
+      "scenario": {
+        "id": "1bbf813c",
+        "name": "sensor_high_clear_204456",
+        "category": "sensor",
+        "severity": "high",
+        "compliance_tags": [
+          "MISRA_C_2012_Rule_14_2",
+          "CERT_FLP32_C",
+          "ISO26262_ASIL_B"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 14.39,
+          "acceleration_mps2": -1.92,
+          "heading_deg": 343.1,
+          "lane_position": "center"
+        },
+        "environment": {
+          "weather": "clear",
+          "visibility_m": 187.8,
+          "road_condition": "dry",
+          "lighting": "day"
+        },
+        "traffic_signals": {
+          "state": "RED",
+          "distance_m": 59.0,
+          "time_to_change_s": 10.6
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "obstacle",
+            "distance_m": 52.48,
+            "relative_speed_mps": 14.01,
+            "lane_overlap": true,
+            "trajectory": "approaching"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "none",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "CONTINUE",
+          "max_response_time_ms": 1000,
+          "min_deceleration_mps2": 0,
+          "alert_level": "none"
+        }
+      },
+      "decision": {
+        "action": "CONTINUE",
+        "alert_level": "none",
+        "deceleration_mps2": 0.0,
+        "response_time_ms": 70,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.753
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "62bdd535",
+      "name": "security_medium_snow_204456",
+      "category": "security",
+      "severity": "medium",
+      "compliance_tags": [
+        "CERT_INT30_C",
+        "CERT_STR31_C",
+        "MISRA_C_2012_Rule_21_3",
+        "SAE_J3061"
+      ],
+      "scenario": {
+        "id": "62bdd535",
+        "name": "security_medium_snow_204456",
+        "category": "security",
+        "severity": "medium",
+        "compliance_tags": [
+          "CERT_INT30_C",
+          "CERT_STR31_C",
+          "MISRA_C_2012_Rule_21_3",
+          "SAE_J3061"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 5.15,
+          "acceleration_mps2": -1.38,
+          "heading_deg": 189.7,
+          "lane_position": "right"
+        },
+        "environment": {
+          "weather": "snow",
+          "visibility_m": 40.2,
+          "road_condition": "dry",
+          "lighting": "day"
+        },
+        "traffic_signals": {
+          "state": "YELLOW",
+          "distance_m": 147.9,
+          "time_to_change_s": 25.9
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "vehicle",
+            "distance_m": 24.86,
+            "relative_speed_mps": 6.28,
+            "lane_overlap": true,
+            "trajectory": "following"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "gps",
+          "signal_jamming": false,
+          "replay_attack": true,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "BRAKE",
+          "max_response_time_ms": 300,
+          "min_deceleration_mps2": 4.0,
+          "alert_level": "warning"
+        }
+      },
+      "decision": {
+        "action": "BRAKE",
+        "alert_level": "warning",
+        "deceleration_mps2": 4.0,
+        "response_time_ms": 53,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.954
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "974327dd",
+      "name": "braking_high_snow_204456",
+      "category": "braking",
+      "severity": "high",
+      "compliance_tags": [
+        "MISRA_C_2012_Rule_15_3",
+        "ISO26262_ASIL_D",
+        "CERT_INT32_C"
+      ],
+      "scenario": {
+        "id": "974327dd",
+        "name": "braking_high_snow_204456",
+        "category": "braking",
+        "severity": "high",
+        "compliance_tags": [
+          "MISRA_C_2012_Rule_15_3",
+          "ISO26262_ASIL_D",
+          "CERT_INT32_C"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 18.12,
+          "acceleration_mps2": -2.53,
+          "heading_deg": 51.2,
+          "lane_position": "right"
+        },
+        "environment": {
+          "weather": "snow",
+          "visibility_m": 15.7,
+          "road_condition": "icy",
+          "lighting": "day"
+        },
+        "traffic_signals": {
+          "state": "NONE",
+          "distance_m": 127.4,
+          "time_to_change_s": 23.6
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "obstacle",
+            "distance_m": 78.37,
+            "relative_speed_mps": -0.59,
+            "lane_overlap": true,
+            "trajectory": "crossing"
+          },
+          {
+            "id": "obj_2",
+            "type": "obstacle",
+            "distance_m": 39.82,
+            "relative_speed_mps": -1.46,
+            "lane_overlap": false,
+            "trajectory": "stationary"
+          },
+          {
+            "id": "obj_3",
+            "type": "vehicle",
+            "distance_m": 76.97,
+            "relative_speed_mps": 8.64,
+            "lane_overlap": false,
+            "trajectory": "crossing"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "none",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "BRAKE",
+          "max_response_time_ms": 300,
+          "min_deceleration_mps2": 4.0,
+          "alert_level": "warning"
+        }
+      },
+      "decision": {
+        "action": "CONTINUE",
+        "alert_level": "none",
+        "deceleration_mps2": 0.0,
+        "response_time_ms": 76,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.929
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "fbc83bf4",
+      "name": "braking_high_clear_204456",
+      "category": "braking",
+      "severity": "high",
+      "compliance_tags": [
+        "MISRA_C_2012_Rule_15_3",
+        "ISO26262_ASIL_D",
+        "CERT_INT32_C"
+      ],
+      "scenario": {
+        "id": "fbc83bf4",
+        "name": "braking_high_clear_204456",
+        "category": "braking",
+        "severity": "high",
+        "compliance_tags": [
+          "MISRA_C_2012_Rule_15_3",
+          "ISO26262_ASIL_D",
+          "CERT_INT32_C"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 17.92,
+          "acceleration_mps2": -1.87,
+          "heading_deg": 341.5,
+          "lane_position": "right"
+        },
+        "environment": {
+          "weather": "clear",
+          "visibility_m": 109.8,
+          "road_condition": "dry",
+          "lighting": "day"
+        },
+        "traffic_signals": {
+          "state": "YELLOW",
+          "distance_m": 60.4,
+          "time_to_change_s": 8.3
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "obstacle",
+            "distance_m": 10.69,
+            "relative_speed_mps": -9.95,
+            "lane_overlap": true,
+            "trajectory": "stationary"
+          },
+          {
+            "id": "obj_2",
+            "type": "obstacle",
+            "distance_m": 44.7,
+            "relative_speed_mps": -0.11,
+            "lane_overlap": true,
+            "trajectory": "crossing"
+          },
+          {
+            "id": "obj_3",
+            "type": "obstacle",
+            "distance_m": 38.82,
+            "relative_speed_mps": -14.75,
+            "lane_overlap": false,
+            "trajectory": "following"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "none",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "BRAKE",
+          "max_response_time_ms": 400,
+          "min_deceleration_mps2": 2.5,
+          "alert_level": "warning"
+        }
+      },
+      "decision": {
+        "action": "BRAKE",
+        "alert_level": "warning",
+        "deceleration_mps2": 2.5,
+        "response_time_ms": 94,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.959
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "72376b7e",
+      "name": "braking_critical_fog_204456",
+      "category": "braking",
+      "severity": "critical",
+      "compliance_tags": [
+        "MISRA_C_2012_Rule_15_3",
+        "ISO26262_ASIL_D",
+        "CERT_INT32_C"
+      ],
+      "scenario": {
+        "id": "72376b7e",
+        "name": "braking_critical_fog_204456",
+        "category": "braking",
+        "severity": "critical",
+        "compliance_tags": [
+          "MISRA_C_2012_Rule_15_3",
+          "ISO26262_ASIL_D",
+          "CERT_INT32_C"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 24.01,
+          "acceleration_mps2": -5.62,
+          "heading_deg": 196.8,
+          "lane_position": "right"
+        },
+        "environment": {
+          "weather": "fog",
+          "visibility_m": 18.6,
+          "road_condition": "dry",
+          "lighting": "dusk"
+        },
+        "traffic_signals": {
+          "state": "GREEN",
+          "distance_m": 33.5,
+          "time_to_change_s": 20.8
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "obstacle",
+            "distance_m": 8.47,
+            "relative_speed_mps": 0.26,
+            "lane_overlap": true,
+            "trajectory": "approaching"
+          },
+          {
+            "id": "obj_2",
+            "type": "obstacle",
+            "distance_m": 22.08,
+            "relative_speed_mps": -5.76,
+            "lane_overlap": true,
+            "trajectory": "following"
+          },
+          {
+            "id": "obj_3",
+            "type": "obstacle",
+            "distance_m": 20.6,
+            "relative_speed_mps": 3.35,
+            "lane_overlap": true,
+            "trajectory": "crossing"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "none",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "BRAKE",
+          "max_response_time_ms": 300,
+          "min_deceleration_mps2": 4.0,
+          "alert_level": "warning"
+        }
+      },
+      "decision": {
+        "action": "BRAKE",
+        "alert_level": "warning",
+        "deceleration_mps2": 2.5,
+        "response_time_ms": 103,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.942
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "3a5b3ca9",
+      "name": "security_medium_clear_204456",
+      "category": "security",
+      "severity": "medium",
+      "compliance_tags": [
+        "CERT_INT30_C",
+        "CERT_STR31_C",
+        "MISRA_C_2012_Rule_21_3",
+        "SAE_J3061"
+      ],
+      "scenario": {
+        "id": "3a5b3ca9",
+        "name": "security_medium_clear_204456",
+        "category": "security",
+        "severity": "medium",
+        "compliance_tags": [
+          "CERT_INT30_C",
+          "CERT_STR31_C",
+          "MISRA_C_2012_Rule_21_3",
+          "SAE_J3061"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 9.16,
+          "acceleration_mps2": -0.5,
+          "heading_deg": 233.8,
+          "lane_position": "right"
+        },
+        "environment": {
+          "weather": "clear",
+          "visibility_m": 117.8,
+          "road_condition": "dry",
+          "lighting": "day"
+        },
+        "traffic_signals": {
+          "state": "RED",
+          "distance_m": 83.4,
+          "time_to_change_s": 9.1
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "vehicle",
+            "distance_m": 57.15,
+            "relative_speed_mps": 10.99,
+            "lane_overlap": false,
+            "trajectory": "following"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "camera",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": true
+        },
+        "expected_behavior": {
+          "action": "BRAKE",
+          "max_response_time_ms": 300,
+          "min_deceleration_mps2": 4.0,
+          "alert_level": "warning"
+        }
+      },
+      "decision": {
+        "action": "BRAKE",
+        "alert_level": "warning",
+        "deceleration_mps2": 4.0,
+        "response_time_ms": 114,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.79
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "7b7ff9ae",
+      "name": "security_critical_rain_204456",
+      "category": "security",
+      "severity": "critical",
+      "compliance_tags": [
+        "CERT_INT30_C",
+        "CERT_STR31_C",
+        "MISRA_C_2012_Rule_21_3",
+        "SAE_J3061"
+      ],
+      "scenario": {
+        "id": "7b7ff9ae",
+        "name": "security_critical_rain_204456",
+        "category": "security",
+        "severity": "critical",
+        "compliance_tags": [
+          "CERT_INT30_C",
+          "CERT_STR31_C",
+          "MISRA_C_2012_Rule_21_3",
+          "SAE_J3061"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 21.73,
+          "acceleration_mps2": -4.36,
+          "heading_deg": 137.2,
+          "lane_position": "right"
+        },
+        "environment": {
+          "weather": "rain",
+          "visibility_m": 52.9,
+          "road_condition": "icy",
+          "lighting": "dusk"
+        },
+        "traffic_signals": {
+          "state": "GREEN",
+          "distance_m": 32.1,
+          "time_to_change_s": 10.8
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "vehicle",
+            "distance_m": 28.17,
+            "relative_speed_mps": -12.72,
+            "lane_overlap": false,
+            "trajectory": "crossing"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "lidar",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "STOP",
+          "max_response_time_ms": 150,
+          "min_deceleration_mps2": 8.0,
+          "alert_level": "critical"
+        }
+      },
+      "decision": {
+        "action": "BRAKE",
+        "alert_level": "warning",
+        "deceleration_mps2": 4.0,
+        "response_time_ms": 66,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.97
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "5185da1b",
+      "name": "sensor_low_fog_204456",
+      "category": "sensor",
+      "severity": "low",
+      "compliance_tags": [
+        "MISRA_C_2012_Rule_14_2",
+        "CERT_FLP32_C",
+        "ISO26262_ASIL_B"
+      ],
+      "scenario": {
+        "id": "5185da1b",
+        "name": "sensor_low_fog_204456",
+        "category": "sensor",
+        "severity": "low",
+        "compliance_tags": [
+          "MISRA_C_2012_Rule_14_2",
+          "CERT_FLP32_C",
+          "ISO26262_ASIL_B"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 1.34,
+          "acceleration_mps2": -1.1,
+          "heading_deg": 337.7,
+          "lane_position": "left"
+        },
+        "environment": {
+          "weather": "fog",
+          "visibility_m": 16.2,
+          "road_condition": "dry",
+          "lighting": "day"
+        },
+        "traffic_signals": {
+          "state": "GREEN",
+          "distance_m": 103.9,
+          "time_to_change_s": 1.0
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "vehicle",
+            "distance_m": 68.85,
+            "relative_speed_mps": 1.8,
+            "lane_overlap": true,
+            "trajectory": "following"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "none",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "CONTINUE",
+          "max_response_time_ms": 1000,
+          "min_deceleration_mps2": 0,
+          "alert_level": "none"
+        }
+      },
+      "decision": {
+        "action": "CONTINUE",
+        "alert_level": "none",
+        "deceleration_mps2": 0.0,
+        "response_time_ms": 90,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.899
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "732e0216",
+      "name": "security_critical_fog_204456",
+      "category": "security",
+      "severity": "critical",
+      "compliance_tags": [
+        "CERT_INT30_C",
+        "CERT_STR31_C",
+        "MISRA_C_2012_Rule_21_3",
+        "SAE_J3061"
+      ],
+      "scenario": {
+        "id": "732e0216",
+        "name": "security_critical_fog_204456",
+        "category": "security",
+        "severity": "critical",
+        "compliance_tags": [
+          "CERT_INT30_C",
+          "CERT_STR31_C",
+          "MISRA_C_2012_Rule_21_3",
+          "SAE_J3061"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 28.39,
+          "acceleration_mps2": -6.22,
+          "heading_deg": 354.4,
+          "lane_position": "right"
+        },
+        "environment": {
+          "weather": "fog",
+          "visibility_m": 13.0,
+          "road_condition": "dry",
+          "lighting": "day"
+        },
+        "traffic_signals": {
+          "state": "NONE",
+          "distance_m": 94.4,
+          "time_to_change_s": 16.9
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "vehicle",
+            "distance_m": 57.59,
+            "relative_speed_mps": 2.21,
+            "lane_overlap": true,
+            "trajectory": "crossing"
+          },
+          {
+            "id": "obj_2",
+            "type": "vehicle",
+            "distance_m": 15.15,
+            "relative_speed_mps": -12.83,
+            "lane_overlap": true,
+            "trajectory": "stationary"
+          },
+          {
+            "id": "obj_3",
+            "type": "vehicle",
+            "distance_m": 17.22,
+            "relative_speed_mps": -2.12,
+            "lane_overlap": true,
+            "trajectory": "following"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "gps",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": true
+        },
+        "expected_behavior": {
+          "action": "STOP",
+          "max_response_time_ms": 150,
+          "min_deceleration_mps2": 8.0,
+          "alert_level": "critical"
+        }
+      },
+      "decision": {
+        "action": "BRAKE",
+        "alert_level": "warning",
+        "deceleration_mps2": 4.0,
+        "response_time_ms": 70,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.781
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    },
+    {
+      "scenario_id": "53bf0736",
+      "name": "braking_high_night_204456",
+      "category": "braking",
+      "severity": "high",
+      "compliance_tags": [
+        "MISRA_C_2012_Rule_15_3",
+        "ISO26262_ASIL_D",
+        "CERT_INT32_C"
+      ],
+      "scenario": {
+        "id": "53bf0736",
+        "name": "braking_high_night_204456",
+        "category": "braking",
+        "severity": "high",
+        "compliance_tags": [
+          "MISRA_C_2012_Rule_15_3",
+          "ISO26262_ASIL_D",
+          "CERT_INT32_C"
+        ],
+        "ego_vehicle": {
+          "speed_mps": 14.54,
+          "acceleration_mps2": -2.5,
+          "heading_deg": 194.3,
+          "lane_position": "left"
+        },
+        "environment": {
+          "weather": "night",
+          "visibility_m": 19.0,
+          "road_condition": "dry",
+          "lighting": "night"
+        },
+        "traffic_signals": {
+          "state": "RED",
+          "distance_m": 145.8,
+          "time_to_change_s": 14.5
+        },
+        "objects": [
+          {
+            "id": "obj_1",
+            "type": "obstacle",
+            "distance_m": 68.32,
+            "relative_speed_mps": -3.88,
+            "lane_overlap": true,
+            "trajectory": "stationary"
+          },
+          {
+            "id": "obj_2",
+            "type": "vehicle",
+            "distance_m": 62.23,
+            "relative_speed_mps": -13.11,
+            "lane_overlap": true,
+            "trajectory": "crossing"
+          }
+        ],
+        "security_context": {
+          "spoofing_attack": "none",
+          "signal_jamming": false,
+          "replay_attack": false,
+          "data_injection": false
+        },
+        "expected_behavior": {
+          "action": "CONTINUE",
+          "max_response_time_ms": 1000,
+          "min_deceleration_mps2": 0,
+          "alert_level": "none"
+        }
+      },
+      "decision": {
+        "action": "CONTINUE",
+        "alert_level": "none",
+        "deceleration_mps2": 0.0,
+        "response_time_ms": 87,
+        "engine_version": "mock-1.0.0",
+        "confidence": 0.944
+      },
+      "validation": {
+        "passed": true,
+        "violations": []
+      }
+    }
+  ]
+}

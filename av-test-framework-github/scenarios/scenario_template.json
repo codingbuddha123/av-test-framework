@@ -1,0 +1,48 @@
+{
+  "scenario_template": {
+    "id": "<string>",
+    "name": "<string>",
+    "category": "<collision|security|sensor|braking|lane>",
+    "severity": "<critical|high|medium|low>",
+    "compliance_tags": ["<MISRA_RULE>", "<CERT_RULE>"],
+    "ego_vehicle": {
+      "speed_mps": "<float: 0–30>",
+      "acceleration_mps2": "<float: -8–4>",
+      "heading_deg": "<float: 0–360>",
+      "lane_position": "<left|center|right>"
+    },
+    "environment": {
+      "weather": "<clear|fog|rain|snow|night>",
+      "visibility_m": "<float: 5–200>",
+      "road_condition": "<dry|wet|icy>",
+      "lighting": "<day|dusk|night>"
+    },
+    "traffic_signals": {
+      "state": "<RED|GREEN|YELLOW|NONE>",
+      "distance_m": "<float: 5–150>",
+      "time_to_change_s": "<float: 0–30>"
+    },
+    "objects": [
+      {
+        "id": "<string>",
+        "type": "<pedestrian|vehicle|cyclist|obstacle>",
+        "distance_m": "<float: 1–100>",
+        "relative_speed_mps": "<float: -20–20>",
+        "lane_overlap": "<true|false>",
+        "trajectory": "<crossing|approaching|stationary|following>"
+      }
+    ],
+    "security_context": {
+      "spoofing_attack": "<none|gps|lidar|camera>",
+      "signal_jamming": "<true|false>",
+      "replay_attack": "<true|false>",
+      "data_injection": "<true|false>"
+    },
+    "expected_behavior": {
+      "action": "<STOP|BRAKE|SWERVE|CONTINUE|ALERT>",
+      "max_response_time_ms": "<int>",
+      "min_deceleration_mps2": "<float>",
+      "alert_level": "<none|warning|critical>"
+    }
+  }
+}
