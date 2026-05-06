@@ -134,6 +134,9 @@ Mock engine contains 3 bugs to validate framework:
 
 Tests catch #1 and #2.
 
+<img width="3338" height="1848" alt="image" src="https://github.com/user-attachments/assets/6d901a93-5625-4a69-8e6d-2a2c05c0b8d4" />
+
+
 ---
 
 ## 📝 License
